@@ -1,11 +1,13 @@
 {
   "repos": {
-    "description": "A Terraform module that manages the tpl_resources resources from the azurerm provider.",
+    "description": "A Terraform module that manages the container_app resources from the azurerm provider.",
     "visibility": "public",
     "default_branch": "main",
     "topics": [
       "terraform",
-      "azure"
+      "azure",
+      "container_app_environment",
+      "container_app_environment_storage"
     ]
   }
 }
