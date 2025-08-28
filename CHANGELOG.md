@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.3) (2025-08-28)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.2...1.0.3)
+
+**Fixed bugs:**
+
+- fix terrascan workflow run [\#17](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/17) ([michaelamattes](https://github.com/michaelamattes))
+
 ## [1.0.2](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.2) (2024-08-28)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.1...1.0.2)
