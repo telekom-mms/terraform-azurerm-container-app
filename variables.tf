@@ -9,6 +9,16 @@ variable "container_app_environment_storage" {
   description = "Resource definition, default settings are defined within locals and merged with var settings. For more information look at [Outputs](#Outputs)."
 }
 
+variable "workload_profiles" {
+  type    = list(object({
+    name                  = string
+    workload_profile_type = string
+    minimum_count         = number
+    maximum_count         = number
+  }))
+  default = []
+}
+
 locals {
   default = {
     // resource definition
