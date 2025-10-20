@@ -20,12 +20,12 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   tags                                        = local.container_app_environment[each.key].tags
 
   dynamic "workload_profile" {
-    for_each = var.workload_profiles
-    content {
-      name                  = workload_profile.value.name
-      workload_profile_type = workload_profile.value.workload_profile_type
-      minimum_count         = workload_profile.value.minimum_count
-      maximum_count         = workload_profile.value.maximum_count
+    for_each =  local.container_app_environment[each.key].workload_profile == null ? [] : [0]
+    content { 
+      name                  = local.container_app_environment[each.key].workload_profile.name
+      workload_profile_type = local.container_app_environment[each.key].workload_profile.workload_profile_type
+      minimum_count         = local.container_app_environment[each.key].workload_profile.minimum_count
+      maximum_count         = local.container_app_environment[each.key].workload_profile.maximum_count
     }
   }
 }

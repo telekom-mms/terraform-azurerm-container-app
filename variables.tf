@@ -9,15 +9,6 @@ variable "container_app_environment_storage" {
   description = "Resource definition, default settings are defined within locals and merged with var settings. For more information look at [Outputs](#Outputs)."
 }
 
-variable "workload_profiles" {
-  type    = list(object({
-    name                  = string
-    workload_profile_type = string
-    minimum_count         = number
-    maximum_count         = number
-  }))
-  default = []
-}
 
 locals {
   default = {
@@ -30,6 +21,12 @@ locals {
       zone_redundancy_enabled                     = null
       log_analytics_workspace_id                  = null
       tags                                        = {}
+      workload_profile = {
+        name       = ""
+        workload_profile_type  = null
+        minimum_count = null
+        maximum_count = null
+      }
     }
     container_app_environment_storage = {
       name        = ""
