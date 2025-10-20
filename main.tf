@@ -18,7 +18,8 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   zone_redundancy_enabled                     = local.container_app_environment[each.key].zone_redundancy_enabled
   log_analytics_workspace_id                  = local.container_app_environment[each.key].log_analytics_workspace_id
   tags                                        = local.container_app_environment[each.key].tags
-
+  public_network_access = "Enabled"
+  
   dynamic "workload_profile" {
     for_each =  local.container_app_environment[each.key].workload_profile == null ? [] : [0]
     content { 
