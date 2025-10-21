@@ -10,6 +10,7 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   for_each = var.container_app_environment
 
   name                                        = local.container_app_environment[each.key].name == "" ? each.key : local.container_app_environment[each.key].name
+  id                                          = local.container_app_environment[each.key].id
   resource_group_name                         = local.container_app_environment[each.key].resource_group_name
   location                                    = local.container_app_environment[each.key].location
   dapr_application_insights_connection_string = local.container_app_environment[each.key].dapr_application_insights_connection_string
