@@ -16,7 +16,6 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   infrastructure_subnet_id                    = local.container_app_environment[each.key].infrastructure_subnet_id
   internal_load_balancer_enabled              = local.container_app_environment[each.key].internal_load_balancer_enabled
   zone_redundancy_enabled                     = local.container_app_environment[each.key].zone_redundancy_enabled
-  public_network_access                       = local.container_app_environment[each.key].public_network_access
   log_analytics_workspace_id                  = local.container_app_environment[each.key].log_analytics_workspace_id
   tags                                        = local.container_app_environment[each.key].tags
 
