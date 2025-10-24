@@ -18,7 +18,6 @@ locals {
       id                                          = null
       dapr_application_insights_connection_string = null
       infrastructure_subnet_id                    = null
-      public_network_access                       = null
       internal_load_balancer_enabled              = null
       zone_redundancy_enabled                     = null
       log_analytics_workspace_id                  = null
