@@ -21,7 +21,7 @@ resource "azurerm_container_app_environment" "container_app_environment" {
 
   
   dynamic "workload_profile" {
-    for_each =  local.container_app_environment[each.key].workload_profile == null ? [] : [0]
+    for_each =  local.container_app_environment[each.key].workload_profile.name == "" ? [] : [1]
     content { 
       name                  = local.container_app_environment[each.key].workload_profile.name
       workload_profile_type = local.container_app_environment[each.key].workload_profile.workload_profile_type
