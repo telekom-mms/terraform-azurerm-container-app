@@ -18,16 +18,16 @@ locals {
       id                                          = null
       dapr_application_insights_connection_string = null
       infrastructure_subnet_id                    = null
-#      internal_load_balancer_enabled              = null
+      internal_load_balancer_enabled              = null
       zone_redundancy_enabled                     = null
       log_analytics_workspace_id                  = null
       tags                                        = {}
-#      workload_profile = {
-#        name       = ""
-#        workload_profile_type  = null
-#        minimum_count = null
-#        maximum_count = null
-#      }
+      workload_profile = {
+        name       = ""
+        workload_profile_type  = null
+        minimum_count = null
+        maximum_count = null
+      }
     }
     container_app_environment_storage = {
       name        = ""
