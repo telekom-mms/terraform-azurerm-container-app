@@ -18,6 +18,17 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   zone_redundancy_enabled                     = local.container_app_environment[each.key].zone_redundancy_enabled
   log_analytics_workspace_id                  = local.container_app_environment[each.key].log_analytics_workspace_id
   tags                                        = local.container_app_environment[each.key].tags
+
+  
+  dynamic "workload_profile" {
+    for_each =  local.container_app_environment[each.key].workload_profile.name == "" ? [] : [1]
+    content { 
+      name                  = local.container_app_environment[each.key].workload_profile.name
+      workload_profile_type = local.container_app_environment[each.key].workload_profile.workload_profile_type
+      minimum_count         = local.container_app_environment[each.key].workload_profile.minimum_count
+      maximum_count         = local.container_app_environment[each.key].workload_profile.maximum_count
+    }
+  }
 }
 
 resource "azurerm_container_app_environment_storage" "container_app_environment_storage" {
