@@ -4,10 +4,10 @@
     "visibility": "public",
     "default_branch": "main",
     "topics": [
-      "terraform",
       "azure",
       "container-app-environment",
-      "container-app-environment-storage"
+      "container-app-environment-storage",
+      "terraform"
     ]
   }
 }
