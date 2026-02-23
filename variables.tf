@@ -23,10 +23,10 @@ locals {
       log_analytics_workspace_id                  = null
       tags                                        = {}
       workload_profile = {
-        name       = ""
-        workload_profile_type  = null
-        minimum_count = null
-        maximum_count = null
+        name                  = ""
+        workload_profile_type = null
+        minimum_count         = null
+        maximum_count         = null
       }
     }
     container_app_environment_storage = {
