@@ -1,12 +1,20 @@
 # Changelog
 
+## [2.0.1](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/2.0.1) (2026-03-30)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/2.0.0...2.0.1)
+
+**Merged pull requests:**
+
+- chore\(config\): standardize renovate.json and update repository topics [\#19](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/19) ([mikaEz](https://github.com/mikaEz))
+
 ## [2.0.0](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/2.0.0) (2025-12-19)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.2...2.0.0)
 
 **Fixed bugs:**
 
-- fix terrascan workflow run [\#17](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/17) ([michaelamattes](https://github.com/michaelamattes))
+- fix terrascan workflow run [\#17](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/17) ([mikaEz](https://github.com/mikaEz))
 
 **Merged pull requests:**
 
@@ -22,9 +30,9 @@
 
 **Merged pull requests:**
 
-- Repair release workflow [\#16](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/16) ([michaelamattes](https://github.com/michaelamattes))
-- Pin version of azurerm to compatible state   [\#14](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/14) ([michaelamattes](https://github.com/michaelamattes))
-- update settings [\#10](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/10) ([michaelamattes](https://github.com/michaelamattes))
+- Repair release workflow [\#16](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/16) ([mikaEz](https://github.com/mikaEz))
+- Pin version of azurerm to compatible state   [\#14](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/14) ([mikaEz](https://github.com/mikaEz))
+- update settings [\#10](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/10) ([mikaEz](https://github.com/mikaEz))
 
 ## [1.0.1](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.1) (2023-11-16)
 
@@ -32,14 +40,14 @@
 
 **Implemented enhancements:**
 
-- add more current available attributes for container\_app environment [\#7](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/7) ([michaelamattes](https://github.com/michaelamattes))
+- add more current available attributes for container\_app environment [\#7](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/7) ([mikaEz](https://github.com/mikaEz))
 
 **Merged pull requests:**
 
-- update release workflow [\#9](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/9) ([michaelamattes](https://github.com/michaelamattes))
-- update topics [\#8](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/8) ([michaelamattes](https://github.com/michaelamattes))
+- update release workflow [\#9](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/9) ([mikaEz](https://github.com/mikaEz))
+- update topics [\#8](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/8) ([mikaEz](https://github.com/mikaEz))
 - add zone\_redundancy\_enabled [\#6](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/6) ([matthiss](https://github.com/matthiss))
-- run terrascan in test setting directory [\#4](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/4) ([michaelamattes](https://github.com/michaelamattes))
+- run terrascan in test setting directory [\#4](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/4) ([mikaEz](https://github.com/mikaEz))
 - make log\_analytics\_workspace\_id optional [\#3](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/3) ([matthiss](https://github.com/matthiss))
 
 ## [1.0.0](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.0) (2023-07-19)
@@ -48,7 +56,7 @@
 
 **Merged pull requests:**
 
-- setup new module [\#1](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/1) ([michaelamattes](https://github.com/michaelamattes))
+- setup new module [\#1](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/1) ([mikaEz](https://github.com/mikaEz))
 
 
 
