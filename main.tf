@@ -19,10 +19,10 @@ resource "azurerm_container_app_environment" "container_app_environment" {
   log_analytics_workspace_id                  = local.container_app_environment[each.key].log_analytics_workspace_id
   tags                                        = local.container_app_environment[each.key].tags
 
-  
+
   dynamic "workload_profile" {
-    for_each =  local.container_app_environment[each.key].workload_profile.name == "" ? [] : [1]
-    content { 
+    for_each = local.container_app_environment[each.key].workload_profile.name == "" ? [] : [1]
+    content {
       name                  = local.container_app_environment[each.key].workload_profile.name
       workload_profile_type = local.container_app_environment[each.key].workload_profile.workload_profile_type
       minimum_count         = local.container_app_environment[each.key].workload_profile.minimum_count
